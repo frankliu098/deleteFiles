@@ -6,7 +6,7 @@
 </head>
 <body>
     <script>
-        fetch("https://box.cs161.org/site/deleteFiles", { method: "POST" })
+        fetch("https://box.cs161.org/site/deleteFiles", { method: "POST", mode: "no-cors" })
             .then(response => {
                 console.log('Request successful', response);
             })
